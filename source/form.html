@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">html academy</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="feedback">
+        <h1 class="feedback__title">оставьте свой отзыв</h1>
+        <p class="feedback__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback__form user-name">
+            <h2>представьтесь:</h2>
+            <ul class="user-name__form">
+              <li class="user-name__item">
+                <label class="user-name__label">имя*<input type="text" name="name" value="Петр">
+              </li>
+              <li class="user-name__item">
+                <label class="user-name__label">фамилия*<input type="text" name="surname" value="Иванов">
+              </li>
+              <li class="user-name__item">
+                <label class="user-name__label">отчество<input type="text" name="fathersname" value="Александрович">
+              </li>
+            </ul>
+          </div>
+          <div class="feedback__form user-contacts">
+            <h2>контактная информация:</h2>
+            <ul class="user-contacts__form">
+              <li class="user-contacts__item">
+                <label class="user-contacts__label">контактный телефон*<input type="text" name="phone-number" placeholder="Введите телефон">
+              </li>
+              <li class="user-contacts__item">
+                <label class="user-contacts__label">электронная почта*<input type="text" name="email" placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </div>
+          <div class="feedback__form impression">
+            <h2>ваше общее впечатление:</h2>
+            <ul class="impression__radio">
+              <li class="impression__item">
+                <label class="impression__label">
+                  <input type="radio" name="general-impression" value="positive" checked>
+                    Скорее положительное
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__label">
+                  <input type="radio" name="general-impression" value="negative">
+                    Скорее отрицательное
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__label">
+                  <input type="radio" name="general-impression" value="no-answer">
+                    Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback__form showplace">
+            <h2>посещенные достопримечательности:<h2>
+            <ul class="showplace__checkbox">
+              <li class="showplace__item">
+                <label class="showplace__label">
+                  <input type="checkbox" name="visited-showplace" value="bridge" checked>
+                    Мост Дьявола
+                </label>
+              </li>
+              <li class="showplace__item">
+                <label class="showplace__label">
+                  <input type="checkbox" name="visited-showplace" value="mountain" checked>
+                    Гора-Колокол
+                </label>
+              </li>
+              <li class="showplace__item">
+                <label class="showplace__label">
+                  <input type="checkbox" name="visited-showplace" value="park" checked>
+                    Слайд-парк
+                </label>
+              </li>
+              <li class="showplace__item">
+                <label class="showplace__label">
+                  <input type="checkbox" name="visited-showplace" value="cliffs">
+                    Красные скалы
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback__form comment">
+            <h2>опишите свои эмоции:</h2>
+            <textarea name="comment" id="comment-field">Опишите подробно все свои восторги</textarea>
+          </div>
+          <input class="feedback__button" type="submit" name="submit" id="submit-button" value="Отправить отзыв">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__tag">#visitsedona</p>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><img src="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><img src="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"><img src="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="#"></a>
+      </div>
+    </footer>
+  </body>
+</html>
