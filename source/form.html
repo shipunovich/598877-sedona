@@ -30,79 +30,72 @@
         <h1 class="feedback__title">Осставьте свой отзыв</h1>
         <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback__form user-name">
+          <fieldset class="feedback__form">
             <legend class="feedback__legend">Представьтесь:</legend>
-            <ul class="user-name__form">
-              <li class="user-name__item">
-                <label class="user-name__label">Имя*<input type="text" name="name" value="Петр">
+            <ul class="feedback__user-name">
+              <li class="feedback__name-i">
+                <label class="feedback__label">Имя*<input class="feedback__input-text" type="text" name="name" value="Петр">
               </li>
-              <li class="user-name__item">
-                <label class="user-name__label">Фамилия*<input type="text" name="surname" value="Иванов">
+              <li class="feedback__name-i">
+                <label class="feedback__label">Фамилия*<input class="feedback__input-text" type="text" name="surname" value="Иванов">
               </li>
-              <li class="user-name__item">
-                <label class="user-name__label">Отчество<input type="text" name="fathersname" value="Александрович">
+              <li class="feedback__name-i">
+                <label class="feedback__label">Отчество<input class="feedback__input-text" type="text" name="fathersname" value="Александрович">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__form user-contacts">
+          <fieldset class="feedback__form">
             <legend class="feedback__legend">Контактная информация:</legend>
-            <ul class="user-contacts__form">
-              <li class="user-contacts__item">
-                <label class="user-contacts__label">Контактный телефон*<input type="text" name="phone-number" placeholder="Введите телефон">
+            <ul class="feedback__user-contacts">
+              <li class="feedback__contacts-i">
+                <label class="feedback__label">Контактный телефон*<input class="feedback__input-text" type="text" name="phone-number" placeholder="Введите телефон">
               </li>
-              <li class="user-contacts__item">
-                <label class="user-contacts__label">Электронная почта*<input type="text" name="email" placeholder="Введите e-mail">
+              <li class="feedback__contacts-i">
+                <label class="feedback__label">Электронная почта*<input class="feedback__input-text" type="text" name="email" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__form impression">
+          <fieldset class="feedback__form">
             <legend class="feedback__legend">Ваше общее впечатление:</legend>
-            <ul class="impression__radio">
-              <li class="impression__item">
-                <label class="impression__label">
-                  <input type="radio" name="general-impression" value="positive" checked>Скорее положительное
-                </label>
+            <ul class="feedback__form-radio">
+              <li class="feedback__radio-i">
+                <label class="feedback__impression-label">
+                  <input type="radio" name="general-impression" value="positive" checked>Скорее положительное</label>
               </li>
-              <li class="impression__item">
-                <label class="impression__label">
-                  <input type="radio" name="general-impression" value="negative">Скорее отрицательное
-                </label>
+              <li class="feedback__radio-i">
+                <label class="feedback__impression-label">
+                  <input type="radio" name="general-impression" value="negative">Скорее отрицательное</label>
               </li>
-              <li class="impression__item">
-                <label class="impression__label">
-                  <input type="radio" name="general-impression" value="no-answer">Затрудняюсь ответить
+              <li class="feedback__radio-i">
+                <label class="feedback__impression-label"><input type="radio" name="general-impression" value="no-answer">Затрудняюсь ответить
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__form showplace">
+          <fieldset class="feedback__form">
             <legend class="feedback__legend">Посещенные достопримечательности:</legend>
-            <ul class="showplace__checkbox">
-              <li class="showplace__item">
-                <label class="showplace__label">
-                  <input type="checkbox" name="visited-showplace" value="bridge" checked>Мост Дьявола
-                </label>
+            <ul class="feedback__checkbox">
+              <li class="feedback__showplace-i">
+                <label class="feedback__impression-label">
+                  <input type="checkbox" name="visited-showplace" value="bridge" checked>Мост Дьявола</label>
               </li>
-              <li class="showplace__item">
-                <label class="showplace__label">
-                  <input type="checkbox" name="visited-showplace" value="mountain" checked>Гора-Колокол
-                </label>
+              <li class="feedback__showplace-i">
+                <label class="feedback__impression-label">
+                  <input type="checkbox" name="visited-showplace" value="mountain" checked>Гора-Колокол</label>
               </li>
-              <li class="showplace__item">
-                <label class="showplace__label">
-                  <input type="checkbox" name="visited-showplace" value="park" checked>Слайд-парк
-                </label>
+              <li class="feedback__showplace-i">
+                <label class="feedback__impression-label">
+                  <input type="checkbox" name="visited-showplace" value="park" checked>Слайд-парк</label>
               </li>
-              <li class="showplace__item">
-                <label class="showplace__label">
-                  <input type="checkbox" name="visited-showplace" value="cliffs">Красные скалы
-                </label>
+              <li class="feedback__showplace-i">
+                <label class="feedback__impression-label">
+                  <input type="checkbox" name="visited-showplace" value="cliffs">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__form comment">
+          <fieldset class="feedback__form">
             <legend class="feedback__legend">Опишите свои эмоции:</legend>
-            <textarea name="comment" id="comment-field">Опишите подробно все свои восторги</textarea>
+            <textarea class="feedback__comment" name="comment" id="comment-field">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <input class="feedback__button" type="submit" name="submit" id="submit-button" value="Отправить отзыв">
         </form>
@@ -114,13 +107,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"><img src="#"></a>
+            <a class="social__link social__link--twitter" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"><img src="#"></a>
+            <a class="social__link social__link--facebook" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"><img src="#"></a>
+            <a class="social__link social__link--youtube" href="#"></a>
           </li>
         </ul>
       </div>
