@@ -1,3 +1,22 @@
 .photo {
   background: ffffff;
 }
+
+.photo__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .photo__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .photo__item--big {
+    width: 84%;
+  }
+  .photo__item {
+    width: 42%;
+  }
+}

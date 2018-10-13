@@ -5,4 +5,27 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__list {
+  list-style: none;
+  order: 1;
+}
+
+.page-header__logo-link {
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .page-header__list {
+    display: flex;
+    justify-content: space-around;
+  }
 }

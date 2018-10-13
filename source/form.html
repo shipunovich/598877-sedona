@@ -9,13 +9,13 @@
   <body>
     <header class="page-header">
       <nav class="page-header__nav">
-        <a class="page-header__logo-link" href="#"><img class="page-header__logo" src="#" width="102" height="83" alt="Логотип Седона"></a>
+        <a class="page-header__logo-link" href="index.html"><img class="page-header__logo" src="#" width="102" height="83" alt="Логотип Седона"></a>
         <ul class="page-header__list">
           <li class="page-header__item">
-            <a class="page-header__link" href="#">Главная</a>
+            <a class="page-header__link" href="index.html">Главная</a>
           </li>
           <li class="page-header__item">
-            <a class="page-header__link" href="#">Фото и видео</a>
+            <a class="page-header__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="page-header__item page-header__item--active">
             <a class="site-list__link">Форма отзыва</a>
@@ -30,7 +30,8 @@
     <main class="feedback">
       <h1 class="feedback__title">Оставьте свой отзыв</h1>
       <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback__flex">
         <fieldset class="feedback__fieldset">
           <legend class="feedback__legend">Представьтесь:</legend>
           <ul class="feedback__list">
@@ -98,6 +99,7 @@
           <legend class="feedback__legend">Опишите свои эмоции:</legend>
           <textarea class="feedback__comment" name="comment" id="comment-field">Опишите подробно все свои восторги</textarea>
         </fieldset>
+        </div>
         <input class="feedback__button" type="submit" name="submit" id="submit-button" value="Отправить отзыв">
       </form>
     </main>

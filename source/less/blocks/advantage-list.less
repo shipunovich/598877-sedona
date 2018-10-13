@@ -1,3 +1,16 @@
 .advantage-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantage-list__item--blue {
+    min-width: 100%;
+  }
 }
