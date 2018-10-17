@@ -3,8 +3,18 @@
 }
 
 .photo__list {
-  display: flex;
-  flex-direction: column;
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo__item {
+  width: 100%;
+}
+
+.photo__img {
+  height: 280px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -13,10 +23,19 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .photo__item--big {
-    width: 84%;
-  }
   .photo__item {
-    width: 42%;
+    flex: 0 0 42%;
+  }
+  .photo__item--big {
+    flex: 0 0 84%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__item {
+    flex: 0 0 33.3333%;
+  }
+  .photo__item--big {
+    flex: 0 0 100%;
   }
 }

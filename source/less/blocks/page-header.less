@@ -1,12 +1,9 @@
 .page-header {
-  background: #81b3d2;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
 }
 
 .page-header__nav {
@@ -14,13 +11,18 @@
   flex-direction: column;
 }
 
-.page-header__list {
-  list-style: none;
-  order: 1;
+.page-header__logo-link {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.page-header__logo-link {
-  order: 2;
+.page-header__list {
+  background: #81b3d2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {

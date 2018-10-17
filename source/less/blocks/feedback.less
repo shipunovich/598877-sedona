@@ -2,25 +2,36 @@
   font-size: 18px;
   line-height: 26px;
 }
-
-.feedback__flex {
-  dispay: flex;
-  flex-direction: column;
-}
-
 .feedback__fieldset {
   border: none;
+  margin: 20px 0;
+  padding: 0;
 }
-
 .feedback__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 @media (min-width: 768px) {
   .feedback__flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  .feedback__fieldset--impression {
+    order: -1;
+  }
+  .feedback__fieldset--name,
+  .feedback__fieldset--impression {
+    flex: 0 0 50%;
+  }
+  .feedback__fieldset--contacts,
+  .feedback__fieldset--showplace,
+  .feedback__fieldset--comment {
+    flex: 0 0 100%
+  }
+  .feedback__fieldset--showplace {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
