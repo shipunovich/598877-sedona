@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header wraper">
       <nav class="page-header__nav">
-        <a class="page-header__logo-link" href="#"><img class="page-header__logo" src="#" width="102" height="83" alt="Логотип Седона"></a>
+        <a class="page-header__logo-link"><img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона"></a>
         <ul class="page-header__list">
           <li class="page-header__item">
-            <a class="page-header__link" href="#">Главная</a>
+            <a class="page-header__link" href="index.html">Главная</a>
           </li>
           <li class="page-header__item">
-            <a class="page-header__link" href="#">Фото и видео</a>
+            <a class="page-header__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="page-header__item page-header__item--active">
             <a class="site-list__link">Форма отзыва</a>
@@ -27,14 +28,15 @@
       </nav>
     </header>
 
-    <main class="feedback">
+    <main class="feedback wraper">
       <h1 class="feedback__title">Оставьте свой отзыв</h1>
       <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="feedback__fieldset">
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback__flex">
+        <fieldset class="feedback__fieldset feedback__fieldset--name">
           <legend class="feedback__legend">Представьтесь:</legend>
           <ul class="feedback__list">
-            <li class="feedback__item">
+            <li class="feedback__item feedback__item">
               <label class="feedback__label">Имя*<input class="feedback__input-text" type="text" name="name" value="Петр">
             </li>
             <li class="feedback__item">
@@ -45,9 +47,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__fieldset">
+        <fieldset class="feedback__fieldset feedback__fieldset--contacts">
           <legend class="feedback__legend">Контактная информация:</legend>
-          <ul class="feedback__list">
+          <ul class="feedback__list feedback__list--contacts">
             <li class="feedback__item">
               <label class="feedback__label">Контактный телефон*<input class="feedback__input-text" type="text" name="phone-number" placeholder="Введите телефон">
             </li>
@@ -56,9 +58,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__fieldset">
+        <fieldset class="feedback__fieldset feedback__fieldset--impression">
           <legend class="feedback__legend">Ваше общее впечатление:</legend>
-          <ul class="feedback__list">
+          <ul class="feedback__list feedback__list--impression">
             <li class="feedback__item">
               <label class="feedback__label">
                 <input type="radio" name="general-impression" value="positive" checked>Скорее положительное</label>
@@ -73,9 +75,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__fieldset">
+        <fieldset class="feedback__fieldset feedback__fieldset--showplace">
           <legend class="feedback__legend">Посещенные достопримечательности:</legend>
-          <ul class="feedback__list">
+          <ul class="feedback__list feedback__list--showplace">
             <li class="feedback__item">
               <label class="feedback__label">
                 <input type="checkbox" name="visited-showplace" value="bridge" checked>Мост Дьявола</label>
@@ -94,15 +96,16 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__fieldset">
+        <fieldset class="feedback__fieldset feedback__fieldset--comment">
           <legend class="feedback__legend">Опишите свои эмоции:</legend>
           <textarea class="feedback__comment" name="comment" id="comment-field">Опишите подробно все свои восторги</textarea>
         </fieldset>
+        </div>
         <input class="feedback__button" type="submit" name="submit" id="submit-button" value="Отправить отзыв">
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer wraper">
       <p class="page-footer__tag">#visitsedona</p>
       <div class="page-footer__social social">
         <ul class="social__list">

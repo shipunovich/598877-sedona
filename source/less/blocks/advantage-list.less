@@ -1,3 +1,36 @@
 .advantage-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-list__img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage-list__item {
+    width: 33.3333%;
+  }
+
+  .advantage-list__item--img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage-list__item-flex {
+    width: 33.3333%;
+  }
+
+  .advantage-list__img {
+    width: 66.6667%;
+  }
 }

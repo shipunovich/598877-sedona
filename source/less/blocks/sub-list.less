@@ -1,3 +1,14 @@
 .sub-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .sub-list {
+    display: flex;
+    flex-direction: row;
+  }
 }
