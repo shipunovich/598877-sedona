@@ -1,21 +1,113 @@
 .feedback {
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feedback__form {
+
+}
+
+.feedback__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin:0;
+  padding: 30px 0;
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: #e5e5e5 solid 1px;
 }
 
 .feedback__fieldset {
   border: none;
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
 }
 
 .feedback__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
+.feedback__legend {
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.feedback__item {
+
+}
+
+.feedback__input-text {
+  border: none;
+  background: #f2f2f2;
+  height: 58px;
+  margin-bottom: 20px;
+  outline: none;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+}
+
+.feedback__input-text--name {
+  width: 230px;
+}
+
+.feedback__input-text--surname,
+.feedback__input-text--fathersname {
+  width: 193px;
+}
+
+.feedback__input-text--contacts {
+  width: 280px;
+}
+
+.feedback__comment {
+  width: 280px;
+  height: 160px;
+  background: #f2f2f2;
+  border: none;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.feedback__button {
+  display: block;
+  width: 280px;
+  background-color: #81b3d2;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  font-family: inherit;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  border: none;
+}
+
 @media (min-width: 768px) {
+  .feedback__text {
+    border: none;
+  }
+
   .feedback__flex {
     display: flex;
     flex-direction: row;
@@ -38,8 +130,22 @@
     flex: 0 0 100%;
   }
 
-  .feedback__fieldset--showplace {
+  .feedback__list--showplace {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .feedback__item--showplace {
+
+  }
+
+  .feedback__legend--impression,
+  .feedback__legend--name {
+    text-align: start;
+  }
+
+  .feedback__input-text--contacts {
+    width: 648px;
   }
 }

@@ -10,6 +10,27 @@
 
 .photo__item {
   width: 100%;
+  padding: 22px 0;
+  border-bottom: #e5e5e5 solid 1px;
+}
+
+.photo__title {
+  font-size: 14px;
+  padding-top: 18px;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+.photo__author {
+  text-transform: none;
+  padding-top: 0;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.photo__likes {
+  font-weight: 700;
+  padding-left: 35px;
 }
 
 .photo__img {
@@ -28,10 +49,20 @@
 
   .photo__item {
     flex: 0 0 50%;
+    border-bottom: none;
+    padding: 0;
   }
 
   .photo__item--big {
     flex: 0 0 100%;
+  }
+
+  .photo__info {
+    background-color: #f2f2f2;
+  }
+
+  .photo__info--darker {
+    background-color: #eaeaea;
   }
 }
 

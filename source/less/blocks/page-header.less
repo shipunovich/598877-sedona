@@ -25,10 +25,27 @@
   padding: 0;
 }
 
+.page-header__item {
+  min-height: 55px;
+  border-bottom: #678fa8 solid 1px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .page-header__list {
     display: flex;
     justify-content: space-around;
     width: auto;
+  }
+
+  .page-header__item {
+    border-bottom: none;
   }
 }
