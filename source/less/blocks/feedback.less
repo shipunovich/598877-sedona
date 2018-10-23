@@ -4,10 +4,6 @@
   text-transform: uppercase;
 }
 
-.feedback__form {
-
-}
-
 .feedback__title {
   font-size: 18px;
   line-height: 26px;
@@ -28,7 +24,7 @@
 .feedback__fieldset {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .feedback__list {
@@ -43,39 +39,66 @@
   padding: 20px 0;
 }
 
-.feedback__item {
+.feedback__label {
 
+}
+
+.feedback__label--radio::before {
+  width: 25px;
+  height: 25px;
+  background-color: #f2f2f2;
+}
+
+feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
+  fill: black;
+}
+
+.feedback__label-svg {
+  fill: transparent;
+  background-color: #f2f2f2;
+  width: 58px;
+  height: 58px;
+  padding: 20px 15px;
+}
+
+.feedback__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.feedback__item--contacts {
+  display: block;
+}
+
+.feedback__label--contacts{
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  margin-top: 17px;
 }
 
 .feedback__input-text {
   border: none;
   background: #f2f2f2;
   height: 58px;
-  margin-bottom: 20px;
+  padding-left: 10px;
   outline: none;
-  padding-left: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-
-}
-
-.feedback__input-text--name {
-  width: 230px;
-}
-
-.feedback__input-text--surname,
-.feedback__input-text--fathersname {
-  width: 193px;
+  flex-grow: 1;
 }
 
 .feedback__input-text--contacts {
-  width: 280px;
+  width: 100%;
 }
 
 .feedback__comment {
-  width: 280px;
+  width: 100%;
   height: 160px;
   background: #f2f2f2;
   border: none;
@@ -101,6 +124,7 @@
   text-align: center;
   padding: 20px;
   border: none;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
