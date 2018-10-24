@@ -16,15 +16,16 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 20px;
-  border-bottom: #e5e5e5 solid 1px;
+  padding: 0 20px;
 }
 
 .feedback__fieldset {
   border: none;
   margin: 0;
   padding: 20px;
+  border-top: #e5e5e5 solid 1px;
 }
 
 .feedback__list {
@@ -40,16 +41,44 @@
 }
 
 .feedback__label {
+  text-transform: none;
+  font-weight: 700;
+  position: relative;
+}
 
+.feedback__label--radio,
+ .feedback__label--checkbox {
+  padding-left: 77px;
+  display: flex;
+  height: 58px;
+  align-items: center;
 }
 
 .feedback__label--radio::before {
-  width: 25px;
-  height: 25px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
   background-color: #f2f2f2;
 }
 
-feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
+.feedback__label--radio::after {
+  content: "";
+  position: absolute;
+}
+
+.feedback__radio:checked + .feedback__label--radio::after {
+  top: 16px;
+  left: 16px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
   fill: black;
 }
 
@@ -59,6 +88,8 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
   width: 58px;
   height: 58px;
   padding: 20px 15px;
+  position: absolute;
+  left: 0;
 }
 
 .feedback__item {
@@ -66,7 +97,8 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 20px;
+
 }
 
 .feedback__item--contacts {
@@ -85,16 +117,19 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
   background: #f2f2f2;
   height: 58px;
   padding-left: 10px;
+  margin-left: 15px;
   outline: none;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   flex-grow: 1;
+  width: 100%;
 }
 
 .feedback__input-text--contacts {
   width: 100%;
+  margin: 0;
 }
 
 .feedback__comment {
@@ -129,7 +164,7 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
 
 @media (min-width: 768px) {
   .feedback__text {
-    border: none;
+    padding: 0 165px;
   }
 
   .feedback__flex {
@@ -137,6 +172,10 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 60px;
+  }
+  .feedback__fieldset {
+    margin-top: 53px;
+    padding: 0;
   }
 
   .feedback__fieldset--impression {
@@ -146,6 +185,12 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
   .feedback__fieldset--name,
   .feedback__fieldset--impression {
     flex: 0 0 50%;
+    border: none;
+  }
+
+  .feedback__fieldset--name {
+    padding-left: 59px;
+    border-left: #f2f2f2 solid 1px;
   }
 
   .feedback__fieldset--contacts,
@@ -158,10 +203,11 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 96px;
   }
 
   .feedback__item--showplace {
-
+    flex: 0 0 50%;
   }
 
   .feedback__legend--impression,
@@ -170,6 +216,79 @@ feedback__checkbox:checked + .feedback__label--checkbox .feedback__label-svg {
   }
 
   .feedback__input-text--contacts {
-    width: 648px;
+    width: 100%;
+  }
+
+  .feedback__button {
+    width: 320px;
+    margin-top: 58px;
+    margin-left: 60px;
+  }
+
+  .page-footer {
+    padding: 100px 0 20px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback__text {
+    padding: 0 380px;
+  }
+
+  .feedback__flex {
+    margin: 0 120px;
+  }
+
+  .feedback__fieldset {
+    margin-top: 80px;
+  }
+
+  .feedback__legend {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .feedback__legend--impression {
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
+
+  .feedback__fieldset--name {
+    padding-left: 80px;
+    margin-bottom: 40px;
+  }
+
+  .feedback__list--contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback__item--contacts {
+    display: flex;
+    margin: 0;
+  }
+
+  .feedback__label--contacts {
+    padding: 0;
+    margin: 0;
+  }
+
+  .feedback__input-text--contacts {
+    width: 315px;
+    margin: 0;
+    flex-grow: 0;
+  }
+
+  .feedback__list--showplace {
+    margin: 0;
+  }
+
+  .feedback__item--showplace {
+    flex: 0 0 25%;
+    margin: 0;
+  }
+
+  .feedback__button {
+    margin-left: 120px;
   }
 }

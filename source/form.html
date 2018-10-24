@@ -11,6 +11,7 @@
     <header class="page-header wraper">
       <nav class="page-header__nav">
         <a class="page-header__logo-link" href="index.html"><img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона"></a>
+        <button class="page-header__button"></button>
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link" href="index.html">Главная</a>
@@ -41,15 +42,15 @@
           <ul class="feedback__list">
             <li class="feedback__item">
               <label class="feedback__label" for="name">Имя*:</label>
-              <input class="feedback__input-text" type="text" name="name" id="name" value="Петр">
+              <input class="feedback__input-text" type="text" name="name" id="name" placeholder="Петр">
             </li>
             <li class="feedback__item">
               <label class="feedback__label" for="surname">Фамилия*:</label>
-              <input class="feedback__input-text" type="text" name="surname" id="surname" value="Иванов">
+              <input class="feedback__input-text" type="text" name="surname" id="surname" placeholder="Иванов">
             </li>
             <li class="feedback__item">
               <label class="feedback__label" for="fathersname">Отчество:</label>
-              <input class="feedback__input-text" type="text" name="fathersname" id="fathersname" value="Александрович">
+              <input class="feedback__input-text" type="text" name="fathersname" id="fathersname" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
@@ -74,12 +75,12 @@
               <label class="feedback__label feedback__label--radio" for="positive">Скорее положительное</label>
             </li>
             <li class="feedback__item">
-              <input "visually-hidden feedback__radio" type="radio" name="general-impression" value="negative" id="negative">
-              <label class="feedback__label" for="negative">Скорее отрицательное</label>
+              <input class="visually-hidden feedback__radio" type="radio" name="general-impression" value="negative" id="negative">
+              <label class="feedback__label feedback__label--radio" for="negative">Скорее отрицательное</label>
             </li>
             <li class="feedback__item">
-              <input "visually-hidden feedback__radio" type="radio" name="general-impression" value="no-answer" id="no-answer">
-              <label class="feedback__label" for="no-answer">Затрудняюсь ответить</label>
+              <input class="visually-hidden feedback__radio" type="radio" name="general-impression" value="no-answer" id="no-answer">
+              <label class="feedback__label feedback__label--radio" for="no-answer">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
@@ -95,21 +96,21 @@
             </li>
             <li class="feedback__item feedback__item--showplace">
               <input class="visually-hidden feedback__checkbox" type="checkbox" name="visited-showplace" value="mountain" id="mountain" checked>
-              <label class="feedback__label" for="mountain">
+              <label class="feedback__label feedback__label--checkbox" for="mountain">
                 <svg class="feedback__label-svg" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
                   <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
                 </svg>Гора-Колокол</label>
             </li>
             <li class="feedback__item feedback__item--showplace">
               <input class="visually-hidden feedback__checkbox" type="checkbox" name="visited-showplace" value="park" id="park" checked>
-              <label class="feedback__label" for="park">
+              <label class="feedback__label feedback__label--checkbox" for="park">
                 <svg class="feedback__label-svg" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
                   <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
                 </svg>Слайд-парк</label>
             </li>
             <li class="feedback__item feedback__item--showplace">
               <input class="visually-hidden feedback__checkbox" type="checkbox" name="visited-showplace" value="cliffs" id="cliffs">
-              <label class="feedback__label" for="cliffs">
+              <label class="feedback__label feedback__label--checkbox" for="cliffs">
                 <svg class="feedback__label-svg" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
                   <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
                 </svg>Красные скалы</label>
