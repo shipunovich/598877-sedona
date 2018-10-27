@@ -31,8 +31,24 @@
     </header>
 
     <main class="feedback wraper">
-      <div class="main-img">
-        <img class="main-img__index" src="img/bg-back-desktop@1x.jpg"  height="390" alt="Логотип Седона">
+      <div class="main-img main-img__form">
+        <img class="main-img__img-form" src="img/bg-back-desktop@1x.jpg"  height="388" alt="Логотип Седона">
+        <svg class="main-img__bg--mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" preserveAspectRatio="none" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
+          <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
+          <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
+        </svg>
+        <svg class="main-img__bg--tablet" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="768px" height="57px" viewBox="216.469 0 768 57" preserveAspectRatio="none" enable-background="new 216.469 0 768 57" xml:space="preserve">
+          <g>
+            <polygon fill="#FFFFFF" points="249.566,23.71 216.469,20.565 216.469,57 599.955,57 249.566,0"/>
+            <polygon fill="#FFFFFF" points="950.346,23.71 950.346,0 599.955,57 984.469,57 984.469,20.468"/>
+          </g>
+        </svg>
+        <svg class="main-img__bg--desktop" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="57px" viewBox="0 0 1200 57" preserveAspectRatio="none" enable-background="new 0 0 1200 57" xml:space="preserve">
+          <g>
+            <polygon fill="#ffffff" points="250,24 0,0 0,57 250,57 600,57 250,0"/>
+            <polygon fill="#ffffff" points="951,24 951,0 600,57 951,57 1200,57 1200,0"/>
+          </g>
+        </svg>
       </div>
       <h1 class="feedback__title">Оставьте свой отзыв</h1>
       <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -58,11 +74,11 @@
         <fieldset class="feedback__fieldset feedback__fieldset--contacts">
           <legend class="feedback__legend">Контактная информация:</legend>
           <ul class="feedback__list feedback__list--contacts">
-            <li class="feedback__item feedback__item--contacts">
-              <label class="feedback__label feedback__label--contacts" for="phone-number">Контактный телефон*</label>
+            <li class="feedback__item feedback__item--contacts feedback__item--phone">
+              <label class="feedback__label feedback__label--contacts" for="phone-number"><span class="feedback__label--hidden">Контактный</span> телефон*</label>
               <input class="feedback__input-text feedback__input-text--contacts" type="text" name="phone-number" id="phone-number" placeholder="Введите телефон">
             </li>
-            <li class="feedback__item feedback__item--contacts">
+            <li class="feedback__item feedback__item--contacts feedback__item--email">
               <label class="feedback__label feedback__label--contacts" for="email">Электронная почта*</label>
               <input class="feedback__input-text feedback__input-text--contacts" type="text" name="email" id="email" placeholder="Введите e-mail">
             </li>
