@@ -72,14 +72,14 @@
           </ul>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--contacts">
-          <legend class="feedback__legend">Контактная информация:</legend>
+          <legend class="feedback__legend feedback__legend--contacts">Контактная информация:</legend>
           <ul class="feedback__list feedback__list--contacts">
             <li class="feedback__item feedback__item--contacts feedback__item--phone">
-              <label class="feedback__label feedback__label--contacts" for="phone-number"><span class="feedback__label--hidden">Контактный</span> телефон*</label>
+              <label class="feedback__label feedback__label--contacts" for="phone-number"><span class="feedback__label--hidden">Контактный</span> телефон*:</label>
               <input class="feedback__input-text feedback__input-text--contacts" type="text" name="phone-number" id="phone-number" placeholder="Введите телефон">
             </li>
             <li class="feedback__item feedback__item--contacts feedback__item--email">
-              <label class="feedback__label feedback__label--contacts" for="email">Электронная почта*</label>
+              <label class="feedback__label feedback__label--contacts" for="email">Электронная почта*:</label>
               <input class="feedback__input-text feedback__input-text--contacts" type="text" name="email" id="email" placeholder="Введите e-mail">
             </li>
           </ul>
@@ -87,22 +87,22 @@
         <fieldset class="feedback__fieldset feedback__fieldset--impression">
           <legend class="feedback__legend feedback__legend--impression">Ваше общее впечатление:</legend>
           <ul class="feedback__list feedback__list--impression">
-            <li class="feedback__item">
+            <li class="feedback__item feedback__item--radio">
               <input class="visually-hidden feedback__radio" type="radio" name="general-impression" id="positive" value="positive" checked>
               <label class="feedback__label feedback__label--radio" for="positive">Скорее положительное</label>
             </li>
-            <li class="feedback__item">
+            <li class="feedback__item feedback__item--radio">
               <input class="visually-hidden feedback__radio" type="radio" name="general-impression" value="negative" id="negative">
               <label class="feedback__label feedback__label--radio" for="negative">Скорее отрицательное</label>
             </li>
-            <li class="feedback__item">
+            <li class="feedback__item feedback__item--radio">
               <input class="visually-hidden feedback__radio" type="radio" name="general-impression" value="no-answer" id="no-answer">
               <label class="feedback__label feedback__label--radio" for="no-answer">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--showplace">
-          <legend class="feedback__legend">Посещенные достопримечательности:</legend>
+          <legend class="feedback__legend feedback__legend--showplace">Посещенные достопримечательности:</legend>
           <ul class="feedback__list feedback__list--showplace">
             <li class="feedback__item feedback__item--showplace">
               <input class="visually-hidden feedback__checkbox" type="checkbox" name="visited-showplace" value="bridge" id="bridge" checked>
@@ -135,12 +135,12 @@
           </ul>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--comment">
-          <legend class="feedback__legend">Опишите свои эмоции:</legend>
+          <legend class="feedback__legend feedback__legend--comment">Опишите свои эмоции:</legend>
           <textarea class="feedback__comment" name="comment" id="comment-field">Опишите подробно все свои восторги</textarea>
         </fieldset>
         </div>
         <input class="feedback__button button" type="submit" name="submit" id="submit-button" value="Отправить отзыв">
-        <span class="feedback__required">* - обязательные поля</span>
+        <span class="feedback__required">* — обязательные поля</span>
       </form>
     </main>
 

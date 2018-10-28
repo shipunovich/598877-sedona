@@ -2,6 +2,7 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  padding-bottom: 42px;
 }
 
 .video__question {
@@ -9,13 +10,16 @@
   line-height: 26px;
   display: block;
   text-align: center;
-  margin-top: 35px;
+  padding-top: 23px;
 }
 
 .video__text {
   text-align: center;
-  padding: 0 42px;
-  margin-top: 30px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  margin: 0;
 }
 
 .video__content {
@@ -26,6 +30,7 @@
 .video__container {
   margin: 0 -20px;
   width: auto;
+  height: 200px;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,28 +89,39 @@
 
 
 @media (min-width: 768px) {
+
+  .video__question {
+    font-size: 30px;
+    padding-top: 67px;
+    padding-bottom: 31px;
+  }
+
   .video__text {
     padding: 0 177px;
   }
 
   .video__content {
-    padding: 0 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 73px;
   }
 
   .video__container {
     margin: 0;
     width: 100%;
     height: 500px;
-  //  position: relative;
+    position: relative;
   }
 
   .video__controls {
     background-color: rgba(0, 0, 0, 0.6);
-    width: auto;
+    width: 100%;
     height: 95px;
     padding: 15px 10px;
     align-items: center;
-    //position: absolute;
+    position: absolute;
+    //left: 0;
+  //  bottom: 95px;
   }
 
   .video__track-wrapper {
