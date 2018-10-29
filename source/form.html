@@ -10,7 +10,12 @@
   <body>
     <header class="page-header wraper">
       <nav class="page-header__nav">
-        <a class="page-header__logo-link" href="index.html"><img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона"></a>
+        <a class="page-header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+          </picture>
+        </a>
         <button class="page-header__button page-header__button--open"></button>
         <button class="page-header__button page-header__button--close"></button>
         <ul class="page-header__list">
@@ -32,7 +37,11 @@
 
     <main class="feedback wraper">
       <div class="main-img main-img__form">
-        <img class="main-img__img-form" src="img/bg-back-desktop@1x.jpg"  height="388" alt="Логотип Седона">
+        <picture>
+          <sourse media="(min-width: 1200px)" srcset="img/img/bg-back-desktop.jpg 1x, img/img/bg-back-desktopt@2x.jpg 2x">
+          <sourse media="(min-width: 768px)" srcset="img/img/bg-back-tablet.jpg 1x, img/img/bg-back-tablet@2x.jpg 2x">
+          <img class="main-img__img-form" src="img/bg-back-mobile@1x.jpg" alt="Логотип Седона" srcset="img/bg-back-mobile@2x.jpg">
+        </picture>
         <svg class="main-img__bg--mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" preserveAspectRatio="none" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
           <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
           <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
