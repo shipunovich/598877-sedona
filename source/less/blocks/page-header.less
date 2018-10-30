@@ -113,24 +113,6 @@
     line-height: 26px;
   }
 
-  .page-header__item:hover {
-    background-color: #ffffff;
-  }
-
-  .page-header__item--active:hover {
-    background-color: #ffffff;
-  }
-
-  .page-header__item:active {
-    background-color: #ffffff;
-    opacity: 1;
-  }
-
-  .page-header__item--active:active {
-    background-color: #ffffff;
-    opacity: 1;
-  }
-
   .page-header__link:hover {
     color: #81b3d2;
   }
@@ -140,6 +122,21 @@
     opacity: 0.3;
   }
 
+  .page-header__item:hover {
+    background-color: #ffffff;
+  }
+
+  .page-header__item:active {
+    background-color: #ffffff;
+    opacity: 1;
+  }
+
+   .page-header__item--active .page-header__link:active,
+   .page-header__item--active .page-header__link:hover {
+     background-color: #ffffff;
+     opacity: 1;
+     color: #000000;
+   }
 
   .page-header__item {
     border-bottom: none;
@@ -157,6 +154,11 @@
 }
 
 @media (min-width: 1200px) {
+  .page-header__logo  {
+    width: 187px;
+    height: 96px;
+  }
+
   .page-header__item:nth-child(2) {
     margin-right: 122px;
   }
