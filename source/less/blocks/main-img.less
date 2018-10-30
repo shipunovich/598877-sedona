@@ -1,11 +1,25 @@
 .main-img {
   display: block;
   position: relative;
+  object-fit: cover;
+  object-position: center center;
 }
 
-.main-img__index {
+.main-img__index::before {
+  content: "";
+  width: 280px;
+  height: 213px;
   background-image: url("../img/text-sedona-index.svg");
-  background-size: 220px 283px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90px;
+  background-size: 280px 213px;
+  background-repeat: no-repeat;
+}
+
+.main-img__photo {
+    background-image: url("../img/text-sedona.svg");
 }
 
 .main-img__img-index {
