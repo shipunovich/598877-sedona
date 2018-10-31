@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper">
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header wraper">
+    <header class="page-header">
       <nav class="page-header__nav page-header__nav--open">
         <a class="page-header__logo-link" href="index.html">
           <picture>
@@ -39,7 +39,7 @@
       </nav>
     </header>
 
-    <main class="page-main wraper">
+    <main class="page-main">
       <h1 class="visually-hidden">Седона — городок в Аризоне</h1>
       <div class="main-img main-img--index">
         <picture>
@@ -75,7 +75,7 @@
               </svg>
               <h3 class="advantage-list__title advantage-list__title--right">Настоящий городок</h3>
               <span class="advantage-list__number">—№1—</span>
-              <p class="advantage-list__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="advantage-list__text">Седона не аттракцион для&nbsp;туристов, там&nbsp;течет&nbsp;своя&nbsp;жизнь</p>
             </div>
             <picture class="advantage-list__picture">
               <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg" >
@@ -93,7 +93,7 @@
                 </li>
                 <li class="sub-list__item sub-list__item--burger">
                   <h4 class="sub-list__title sub-list__title--burger">Еда</h4>
-                  <p class="sub-list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="sub-list__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                 </li>
               </ul>
           </li>
@@ -117,7 +117,7 @@
           <li class="advantage-list__item advantage-list__item--regular">
             <h3 class="advantage-list__title advantage-list__title--regular">Красивая дорога</h3>
             <span class="advantage-list__number">—№4—</span>
-            <p class="advantage-list__text advantage-list__text--regular">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantage-list__text advantage-list__text--regular">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
           <li class="advantage-list__item advantage-list__item--regular">
             <h3 class="advantage-list__title advantage-list__title--regular">Мало туристов</h3>
@@ -141,7 +141,7 @@
       </section>
     </main>
 
-    <footer class="page-footer wraper">
+    <footer class="page-footer">
       <p class="page-footer__tag">#visitsedona</p>
         <ul class="page-footer__social social">
           <li class="social__item">
@@ -163,6 +163,6 @@
         </svg></a></p>
       </div>
     </footer>
-
+  </div>
   </body>
 </html>

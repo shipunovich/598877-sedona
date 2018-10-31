@@ -8,9 +8,17 @@
   padding: 0;
 }
 
+.photo__img {
+  object-fit: cover;
+  object-position: center center;
+}
+
 .photo__item {
-  border-top: #e5e5e5 solid 1px;
   padding: 20px;
+
+  @media (max-width: 767px) {
+    border-top: #e5e5e5 solid 1px;
+  }
 }
 
 .photo__item:last-child {

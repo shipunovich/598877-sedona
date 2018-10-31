@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper">
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header wraper">
+    <header class="page-header">
       <nav class="page-header__nav page-header__nav--open">
         <a class="page-header__logo-link" href="index.html">
           <picture>
@@ -39,7 +39,7 @@
       </nav>
     </header>
 
-    <main class="feedback wraper">
+    <main class="feedback">
       <div class="main-img">
         <picture>
           <sourse media="(min-width: 1200px)" srcset="img/img/bg-back-desktop.jpg 1x, img/img/bg-back-desktopt@2x.jpg 2x">
@@ -157,7 +157,7 @@
       </form>
     </main>
 
-    <footer class="page-footer wraper">
+    <footer class="page-footer">
       <p class="page-footer__tag">#visitsedona</p>
         <ul class="page-footer__social social">
           <li class="social__item">
@@ -179,5 +179,6 @@
         </svg></a></p>
       </div>
     </footer>
+  </div>
   </body>
 </html>
