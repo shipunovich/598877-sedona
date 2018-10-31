@@ -1,38 +1,40 @@
 .main-img {
   display: block;
   position: relative;
-  object-fit: cover;
-  object-position: center center;
-}
 
-.main-img__index::before {
-  content: "";
-  width: 280px;
-  height: 213px;
-  background-image: url("../img/text-sedona-index.svg");
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 90px;
-  background-size: 280px 213px;
-  background-repeat: no-repeat;
-}
-
-.main-img__photo {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-image: url("../img/text-sedona.svg");
+    width: 230px;
+    height: 40px;
+    top: 52px;
+  }
+
+  &--index {
+    &::before {
+      width: 280px;
+      height: 213px;
+      background-image: url("../img/text-sedona-index.svg");
+      top: 90px;
+    }
+  }
 }
 
-.main-img__img-index {
-  display: block;
-  width: 100%;
-  height: 390px;
-}
-
-.main-img__img-photo,
-.main-img__img-form {
-  display: block;
+.main-img__img {
   width: 100%;
   height: 158px;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+
+  &--index {
+    height: 390px;
+  }
 }
 
 .main-img__bg--mobile {
@@ -42,15 +44,36 @@
   bottom: 0;
 }
 
-.main-img__bg--tablet {
-  display: none;
-}
-
+.main-img__bg--tablet,
 .main-img__bg--desktop {
   display: none;
 }
 
+
 @media (min-width: 768px) {
+  .main-img__img {
+    height: 294px;
+
+    &--index {
+      height: 518px;
+    }
+  }
+
+  .main-img {
+    &::before {
+      width: 458px;
+      height: 78px;
+      background-size: 100%;
+      top: 100px;
+    }
+
+    &--index::before {
+      width: 460px;
+      height: 350px;
+      background-size: 100%;
+    }
+  }
+
   .main-img__bg--mobile {
     display: none;
   }
