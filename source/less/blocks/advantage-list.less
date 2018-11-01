@@ -2,28 +2,68 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantage-list__img {
   width: 100%;
   height: 260px;
   display: block;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 256px;
+  }
+}
+
+.advantage-list__picture {
+  @media (min-width: 768px) {
+    flex-basis: 66.6667%;
+    height: 256px;
+  }
 }
 
 .advantage-list__item {
   min-height: 168px;
   background-color: #eeeeee;
+
+  @media (min-width: 768px) {
+    width: 33.3333%;
+  }
+}
+
+.advantage-list__item--img  {
+  @media (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantage-list__item-flex {
   background-color: #81b3d2;
   min-height: 210px;
   color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 33.3333%;
+    height: 256px;
+  }
 }
 
 .advantage-list__item-flex--svg {
   width: 100%;
   height: 37px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .advantage-list__item-flex--left {
@@ -37,14 +77,58 @@
   margin: 0;
   font-size: 18px;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    line-height: 26px;
+    display: block;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
 }
 
 .advantage-list__title--right {
   padding-top: 37px;
+
+  @media (min-width: 768px) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 136px;
+    padding-right: 136px;
+    padding-top: 52px;
+  }
 }
 
 .advantage-list__title--left {
   padding-top: 41px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 46px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+}
+
+.advantage-list__text--regular {
+  @media (min-width: 768px) {
+    border: none;
+    padding-right: 49px;
+    padding-left: 49px;
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
 }
 
 .advantage-list__number {
@@ -53,6 +137,14 @@
   margin-top: 12px;
   margin-bottom: 14px;
   line-height: 21px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 10px;
+  }
 }
 
 .advantage-list__text {
@@ -66,11 +158,21 @@
     padding-right: 36px;
     padding-left: 36px;
   }
+
+  @media (min-width: 1200px) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 66px;
+  }
 }
 
 .advantage-list__item--regular {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .advantage-list__text--regular {
@@ -81,111 +183,5 @@
 
   .advantage-list__item:last-child & {
     border: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .advantage-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .advantage-list__title {
-    font-size: 21px;
-    line-height: 26px;
-    display: block;
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-
-  .advantage-list__number {
-    margin-bottom: 19px;
-  }
-
-  .advantage-list__picture {
-    flex-basis: 66.6667%;
-    height: 256px;
-  }
-
-  .advantage-list__img {
-    width: 100%;
-    height: 256px;
-  }
-
-  .advantage-list__title--right {
-    padding-top: 45px;
-  }
-
-  .advantage-list__title--left {
-    padding-left: 49px;
-    padding-right: 49px;
-    padding-top: 47px;
-  }
-
-  .advantage-list__title--regular {
-    font-size: 21px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 46px;
-  }
-
-  .advantage-list__text--regular {
-    border: none;
-    padding-right: 49px;
-    padding-left: 49px;
-    padding-bottom: 44px;
-  }
-
-  .advantage-list__item {
-    width: 33.3333%;
-  }
-
-  .advantage-list__item--regular {
-    padding: 0;
-  }
-
-  .advantage-list__item--img {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .advantage-list__item-flex {
-    width: 33.3333%;
-    height: 256px;
-  }
-
-  .advantage-list__item-flex--svg {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .advantage-list__text {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 66px;
-  }
-
-  .advantage-list__number {
-    margin-top: 10px;
-  }
-
-  .advantage-list__title--right {
-    padding-left: 136px;
-    padding-right: 136px;
-    padding-top: 52px;
-  }
-
-  .advantage-list__title--left {
-    padding-left: 124px;
-    padding-right: 124px;
-  }
-
-  .advantage-list__title--regular {
-    padding-left: 140px;
-    padding-right: 140px;
   }
 }

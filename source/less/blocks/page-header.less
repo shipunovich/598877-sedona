@@ -19,39 +19,54 @@
   bottom: -41px;
   transform: translateX(-50%);
   z-index: 2;
+
+  @media (min-width: 1200px) {
+    bottom: auto;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: 1200px) {
+    width: 187px;
+    height: 96px;
+  }
 }
 
 .page-header__button {
   border: none;
   outline: none;
   padding: 0;
-}
 
-.page-header__button--open {
-  visibility: hidden;
-  width: 63px;
-  height: 55px;
-  margin-left: auto;
-  background-color: #ffffff;
-  background-image: url("../img/icon-menu.svg");
-  background-size: 23px 21px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+  @media (min-width: 768px) {
+    display: none;
+  }
 
-.page-header__button--close {
-  display: none;
-  width: 63px;
-  height: 55px;
-  margin-left: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-cross.svg");
-  background-size: 23px 21px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  &--open {
+    visibility: hidden;
+    width: 63px;
+    height: 55px;
+    margin-left: auto;
+    background-color: #ffffff;
+    background-image: url("../img/icon-menu.svg");
+    background-size: 23px 21px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--close {
+    display: none;
+    width: 63px;
+    height: 55px;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    background-image: url("../img/icon-cross.svg");
+    background-size: 23px 21px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .page-header__list {
@@ -67,6 +82,11 @@
 
     @media (min-width: 768px) {
       display: flex;
+      justify-content: space-around;
+      width: auto;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      color: #000000;
     }
   }
 }
@@ -76,6 +96,13 @@
   text-align: center;
   min-height: 56px;
   padding-top: 8px;
+
+  @media (min-width: 768px) {
+    border-bottom: none;
+    flex: 1 0 18%;
+    padding-top: 14px;
+  }
+
 }
 
 .page-header__link {
@@ -83,10 +110,29 @@
   color: #ffffff;
   text-align: center;
   display: block;
+
+  @media (min-width: 768px) {
+    color: #000000;
+    font-size: 14px;
+    line-height: 26px;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-header__item:hover {
   background-color: #669ec0;
+
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+  }
 }
 
 .page-header__item--active:hover {
@@ -96,6 +142,11 @@
 .page-header__item:active {
   background-color: #5496bd;
   opacity: 0.3;
+
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+    opacity: 1;
+  }
 }
 
 .page-header__item--active:active {
@@ -105,54 +156,11 @@
 
 
 @media (min-width: 768px) {
-  .page-header__list {
-    display: flex;
-    justify-content: space-around;
-    width: auto;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  .page-header__button {
-    display: none;
-  }
-
-  .page-header__link {
-    color: #000000;
-    font-size: 14px;
-    line-height: 26px;
-  }
-
-  .page-header__link:hover {
-    color: #81b3d2;
-  }
-
-  .page-header__link:active {
-    color: #000000;
-    opacity: 0.3;
-  }
-
-  .page-header__item:hover {
-    background-color: #ffffff;
-  }
-
-  .page-header__item:active {
-    background-color: #ffffff;
-    opacity: 1;
-  }
-
   .page-header__item--active .page-header__link:active,
   .page-header__item--active .page-header__link:hover {
     background-color: #ffffff;
     opacity: 1;
     color: #000000;
-  }
-
-  .page-header__item {
-    border-bottom: none;
-    flex: 1 0 18%;
-    padding-top: 14px;
   }
 
   .page-header__item:nth-child(2) {
@@ -165,15 +173,6 @@
 }
 
 @media (min-width: 1200px) {
-  .page-header__logo {
-    width: 187px;
-    height: 96px;
-  }
-
-  .page-header__logo-link {
-    bottom: auto;
-  }
-
   .page-header__item:nth-child(2) {
     margin-right: 122px;
   }
