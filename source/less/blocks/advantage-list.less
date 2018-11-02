@@ -14,6 +14,8 @@
   width: 100%;
   height: 260px;
   display: block;
+  object-fit: cover;
+  object-position: center center;
 
   @media (min-width: 768px) {
     width: 100%;
@@ -32,17 +34,24 @@
   min-height: 168px;
   background-color: #eeeeee;
 
+  &--regular {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media (min-width: 768px) {
     width: 33.3333%;
-  }
-}
 
-.advantage-list__item--img  {
-  @media (min-width: 768px) {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    &--img {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &--regular {
+      padding: 0;
+    }
   }
 }
 
@@ -51,32 +60,44 @@
   min-height: 210px;
   color: #ffffff;
 
+  &--svg {
+    width: 100%;
+    height: 37px;
+  }
+
+  &--left {
+    min-height: 188px;
+    order: 2;
+  }
+
   @media (min-width: 768px) {
     width: 33.3333%;
     height: 256px;
+
+    &--svg {
+      display: none;
+    }
   }
-}
-
-.advantage-list__item-flex--svg {
-  width: 100%;
-  height: 37px;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.advantage-list__item-flex--left {
-  min-height: 188px;
-  order: 2;
 }
 
 .advantage-list__title {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 47px;
   margin: 0;
   font-size: 18px;
   font-weight: 700;
+
+  &--right {
+    padding-top: 37px;
+  }
+
+  &--left {
+    padding-top: 41px;
+  }
+
+  &--regular {
+    padding-top: 28px;
+  }
 
   @media (min-width: 768px) {
     font-size: 21px;
@@ -84,50 +105,41 @@
     display: block;
     padding-right: 70px;
     padding-left: 70px;
-  }
-}
 
-.advantage-list__title--right {
-  padding-top: 37px;
+    &--right {
+      padding-top: 45px;
+    }
 
-  @media (min-width: 768px) {
-    padding-top: 45px;
-  }
+    &--left {
+      font-size: 21px;
+      padding-left: 53px;
+      padding-right: 52px;
+      padding-top: 46px;
+    }
 
-  @media (min-width: 1200px) {
-    padding-left: 136px;
-    padding-right: 136px;
-    padding-top: 52px;
-  }
-}
-
-.advantage-list__title--left {
-  padding-top: 41px;
-
-  @media (min-width: 768px) {
-    font-size: 21px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 46px;
+    &--regular {
+      padding-top: 47px;
+    }
   }
 
   @media (min-width: 1200px) {
-    padding-left: 124px;
-    padding-right: 124px;
-  }
-}
+    &--right {
+      padding-left: 136px;
+      padding-right: 136px;
+      padding-top: 52px;
+    }
 
-.advantage-list__text--regular {
-  @media (min-width: 768px) {
-    border: none;
-    padding-right: 49px;
-    padding-left: 49px;
-    padding-bottom: 44px;
-  }
+    &--left {
+      padding-left: 124px;
+      padding-right: 125px;
+      padding-top: 55px;
+    }
 
-  @media (min-width: 768px) {
-    padding-left: 140px;
-    padding-right: 140px;
+    &--regular {
+      padding-left: 130px;
+      padding-right: 130px;
+      padding-top: 46px;
+    }
   }
 }
 
@@ -144,6 +156,7 @@
 
   @media (min-width: 1200px) {
     margin-top: 10px;
+    margin-bottom: 24px;
   }
 }
 
@@ -154,34 +167,37 @@
   padding-bottom: 40px;
   margin: 0;
 
+  &--regular {
+    border-bottom: #d6d6d6 solid 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 27px;
+
+    .advantage-list__item:last-child & {
+      border: none;
+    }
+  }
+
   @media (min-width: 768px) {
     padding-right: 36px;
     padding-left: 36px;
+
+    &--regular {
+      border: none;
+      padding-right: 49px;
+      padding-left: 49px;
+      padding-bottom: 44px;
+    }
   }
 
   @media (min-width: 1200px) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 57px;
+    padding-right: 57px;
     padding-bottom: 66px;
-  }
-}
 
-.advantage-list__item--regular {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: 768px) {
-    padding: 0;
-  }
-}
-
-.advantage-list__text--regular {
-  border-bottom: #d6d6d6 solid 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 27px;
-
-  .advantage-list__item:last-child & {
-    border: none;
+    &--left {
+      padding-left: 86px;
+      padding-right: 86px;
+    }
   }
 }
